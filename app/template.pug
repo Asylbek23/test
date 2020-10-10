@@ -1,0 +1,46 @@
+//- Подключение библиотеки bemto
+include pug/bemto/bemto 
+- set_bemto_settings({ modifier: "--" })
+
+//- Подключение шаблонов
+include pug/head
+include pug/blocks/header
+include pug/blocks/presentation
+include pug/blocks/offer
+include pug/blocks/advantages
+include pug/blocks/guarantee
+include pug/blocks/blog
+include pug/blocks/stats
+include pug/blocks/prices
+
+//- Базовый шаблон
+doctype html
+html
+
+	block head
+		+head({
+			"title": "Lesson-4",
+			"author": "Asik",
+			"description": "Lesson-4"
+		})
+
+	body.page
+		block header
+			+header()
+		
+		block content
+			div content
+		
+		block footer
+			footer
+		
+		block vendors
+			// build:js js/vendor.js
+			script(src="js/libs/jquery/dist/jquery.min.js")
+			script(src="js/libs/slick-carousel/slick/slick.min.js")
+			// endbuild
+
+		block scripts
+			// build:js js/main.js
+			script(src="js/main.js")
+			// endbuild

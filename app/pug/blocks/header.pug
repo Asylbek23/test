@@ -1,0 +1,31 @@
+//- Так пишется миксины
+mixin header()
+	+b.header
+			
+		+b.header-top
+			+e.container
+				+e.A(href="#").logo
+					img(src="img/logo.svg", alt="")
+				+e.menu
+					ul
+						li
+							a(href="#").active Home
+						li
+							a(href="#") About
+						li
+							a(href="#") Pages
+						li
+							a(href="#") Blog
+						li
+							a(href="#") Gallery
+						li
+							a(href="#") Contacts
+			
+		+b.header-content
+			+e.container
+				+e.H2.logo Create cute websites
+					br
+					span fast with us!
+				+e.btns
+					+b.A(href="#").btn.--green Buy now!
+					+b.A(href="#").btn.--transparent Learn more

@@ -1,0 +1,44 @@
+.offer
+	background: #F7F8FA
+		
+	&__container
+		padding-top: 50px
+		padding-bottom: 20px
+		+wrapper()
+	
+	&__items
+		+row-flex()
+		+sm(justify-content, center)
+
+	&__item
+		+col()
+		+size(4)
+		+size-md(6)
+		+size-xs(10)
+		display: flex
+		margin-bottom: 30px
+	
+	&__img
+		min-width: 72px
+		img
+			margin: 0 auto
+			display: block
+
+	&__subtitle
+		font-size: $subtitle
+	
+	&__text
+		+text()
+		margin-bottom: 20px
+	
+	&__link
+		display: block
+		margin-top: auto
+		color: $main-color
+		&:hover
+			text-decoration: underline
+	
+	&__block
+		display: flex
+		flex-direction: column
+		padding: 17px 0 0 20px

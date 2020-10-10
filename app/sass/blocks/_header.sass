@@ -1,0 +1,59 @@
+.header
+	&-top
+		&__container
+			max-width: 1170px
+			margin: 0 auto
+			display: flex
+			height: 60px
+			justify-content: space-between
+			align-items: center
+		&__logo
+			img
+				height: 25px
+		&__menu ul
+			display: flex
+			li
+				margin: 0 15px
+			a
+				color: #333333
+				&:hover,
+				&.active
+					color: $main-color
+	
+	&-content
+		background: url(../img/slaid1.jpg) center no-repeat
+		&__container
+			min-height: 620px
+			max-width: 1170px
+			margin: 0 auto
+			display: flex
+			flex-direction: column
+			align-items: center
+			justify-content: center
+		&__logo
+			color: #ffffff
+			font-size: 48px
+			text-align: center
+			span
+				font-size: 52px
+		&__btns
+			display: flex
+
+.btn
+	padding: 12px 51px
+	border-radius: 30px
+	color: #ffffff
+	transition: all .3s
+	margin-top: 30px
+	display: block
+	margin-left: 5px
+	margin-right: 5px
+	&--green
+		background: $main-color
+		&:hover
+			background: darken($main-color, 7%)
+	&--transparent
+		border: 2px solid #fff
+		&:hover
+			border: 2px solid lighten($main-color, 40%)
+			color: lighten($main-color, 40%)

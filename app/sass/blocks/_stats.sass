@@ -1,0 +1,36 @@
+.stats
+	background: url(../img/backgrownd1.jpg) no-repeat center
+	max-width: 2048px
+	margin: 0 auto
+
+	&__container
+		+wrapper()
+
+	&__items
+		+row-flex()
+		+sm(justify-content, center)
+		+xs(justify-content, center)
+		min-height: 620px
+		display: flex
+		align-items: center
+		text-align: center
+	
+	&__item
+		+col()
+		+size(3)
+		+size-sm(5)
+		+size-xs(10)
+		span
+			display: block
+			margin-top: 20px
+			font-size: 45px
+			color: $main-color
+		p
+			padding-top: 20px
+			font-size: 22px
+			color: #555555
+	
+	&__img
+		display: block
+		margin: 0 auto
+	

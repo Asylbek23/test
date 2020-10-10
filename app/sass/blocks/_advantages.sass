@@ -1,0 +1,46 @@
+.advantages
+	+wrapper()
+	&__container
+		display: flex
+		justify-content: space-between
+		align-items: center
+		padding: 50px 0
+		min-height: 571px
+	
+	&__subtitle
+		font-size: 32px
+	
+	&__text
+		+text()
+	
+	&__block
+		width: 570px
+		padding: 0 40px
+
+	&__items
+		margin-top: 30px
+	
+	&__item
+		display: flex
+		align-items: center
+		&-text
+			margin-left: 20px
+			color: $main-color
+			font-size: $subtitle
+	
+	&__icon
+		display: block
+		width: 60px
+		height: 60px
+		border-radius: 50%
+		margin: 5px 0
+		&--portfolio
+			background: url(../img/iconPortfolio.png) no-repeat center #f7f8fa
+		&--comment
+			background: url(../img/iconComent.png) no-repeat center #f7f8fa
+		&--edit
+			background: url(../img/iconEdit.png) no-repeat center #f7f8fa
+		&--key
+			background: url(../img/iconKey.png) no-repeat center #f7f8fa
+	
+	
